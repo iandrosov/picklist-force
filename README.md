@@ -9,3 +9,6 @@ Install the package included in src directory
 Slaesforce does not provide any standard objects with dependent picklists, this package included Test custom object
 to demonstrate this use case.
 
+### Demo Page
+Can view demo page supported by provided visualForce page at this URL
+https://developer-week-developer-edition.na16.force.com/apex/META_SamplePicklist

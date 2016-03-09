@@ -1,0 +1,51 @@
+<apex:page showHeader="false" docType="html-5.0" standardStylesheets="false" cache="true" controller="META_PicklistSampleController">
+<html>
+<head>
+	<title>Sample Picklist</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+</head>
+
+<body>
+    <div>
+        <p>Note that Salesforce Picklists normally used as single lable that 
+            acts as value as well. In most cases when we deal with drop down selectors
+            programatically we need label:value pairs, display name and actual value selected.
+            Salesforce will typically set both to same string. 
+        </p>
+        <p>
+            One way to get different values 
+            is to use Translation workbench on single language and set Translations
+            to display labels you wnat to see and actual picklist string will be value you get.
+        </p>
+        
+        <p>Example Display Opportunity.Lead Souce Values</p>
+        <ul>          					
+           <apex:repeat value="{!OptySource}" var="opty" id="theopty">
+            <li>{!opty.label}:{!opty.value}</li>
+           </apex:repeat>
+        </ul>
+        
+        <p>Example Display Dependent Picklists</p>
+        <p>Note Salesforce standard objects do not have Dependent Picklists, need to create a custom object to test this.</p>
+        
+        <ul>
+        	<apex:repeat value="{!TestDependent}" var="countryKey">
+                <li>{!countryKey}</li>
+                <ul>
+                    <apex:repeat value="{!TestDependent[countryKey]}" var="myCity">
+                        <li>{!myCity.label}:{!myCity.value}</li>
+                    </apex:repeat>
+                </ul>    
+			</apex:repeat>
+		</ul>
+        
+    </div>    
+</body>
+</html>
+    
+</apex:page>

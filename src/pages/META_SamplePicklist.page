@@ -12,15 +12,15 @@
 
 <body>
     <div>
-        <p>Note that Salesforce Picklists normally used as single lable that 
+        <p>Note that Salesforce Picklists normally used as a single lable that 
             acts as value as well. In most cases when we deal with drop down selectors
             programatically we need label:value pairs, display name and actual value selected.
             Salesforce will typically set both to same string. 
         </p>
         <p>
-            One way to get different values 
+            One way to get different labels and values 
             is to use Translation workbench on single language and set Translations
-            to display labels you wnat to see and actual picklist string will be value you get.
+            to display labels you want to see and actual picklist string will be value you get.
         </p>
         
         <p>Example Display Opportunity.Lead Souce Values</p>

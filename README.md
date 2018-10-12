@@ -14,4 +14,4 @@ Note that Salesforce Picklists normally used as single text lable that acts as t
 One way to get different labels from values is to use Translation workbench on single language and set Translations to display labels that you want to see in UI and actual picklist string will be value you get.
 
 ### Demo Page
-A working demo page is available as VisualForce page at this [URL](https://developer-week-developer-edition.na16.force.com/apex/META_SamplePicklist)
+A working demo page is available as VisualForce page at this [URL](https://developer-week-developer-edition.na55.force.com/apex/META_SamplePicklist)

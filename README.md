@@ -6,12 +6,12 @@ Example VisualFroce page [META_SamplePicklist.page] and APEX Controller [META_Pi
 Install the package included in src directory using ANT deployment tool or any other method to deploy.
 
 ### Dependent Picklists
-Slaesforce does not provide any standard objects with dependent picklists, this package included Test custom object to demonstrate this use case.
+Salesforce does not provide any standard objects with dependent picklists, this package included Test custom object to demonstrate this use case.
 
 ### Word on Picklists
 Note that Salesforce Picklists normally used as single text lable that acts as text label and value. In most cases when we deal with drop down selectors programatically we need label:value pairs, display name and actual value to be selected. Salesforce will typically set both to the same string.
 
-One way to get different labels from values is to use Translation workbench on single language and set Translations to display labels that you want to see in UI and actual picklist string will be value you get.
+One way to get different labels declarative from values is to use Translation workbench on single language and set Translations to display labels that you want to see in UI and actual picklist string will be value you get.
 
 ### Demo Page
 A working demo page is available as VisualForce page at this [URL](https://developer-week-developer-edition.na55.force.com/apex/META_SamplePicklist)
